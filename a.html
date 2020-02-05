@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="a.css">
+<link rel="stylesheet" type="text/css" href="card.css">
+<style type="text/css">
+        .slideimg{
+            width: 100%;
+            height: 500px;
+            padding: 0;
+            margin: 0px;
+        }
+
+        slider{
+            display: block;
+            width: 100%;
+            height: 500px;
+            background-color: #1f1f1f;
+            overflow: hidden;
+            position: absolute;
+        }
+
+        slider > *{
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 500px;
+            background:#1f1f1f;
+            animation: slide 12s infinite;
+            overflow: hidden;
+        }
+
+        slide:nth-child(1){
+            left: 0%;
+            animation-delay: -1s;
+            background-image: url(images/salon29.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        slide:nth-child(2){
+            animation-delay: 2s;
+            background-image: url(images/home2.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        slide:nth-child(3){
+            animation-delay: 5s;
+            background-image: url(images/homebanner.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        slide:nth-child(4){
+            left: 0%;
+            animation-delay: 8s;
+            background-image: url(images/home1.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        slide p1{
+          float: left;
+            font-size: 70px;
+            text-align: center;
+            display: inline-block;
+            width: 500px;
+            margin-top: 170px;
+            color:#fff;
+        }
+
+        .submit{
+          background-color: #009688;
+          width: 80px;
+          height: 40px;
+          color: white;
+        }
+
+        slide p2{
+            float: right;
+            font-size: 70px;
+            text-align: center;
+            display: inline-block;
+            width: 500px;
+            margin-top: 170px;
+            color:#000;
+        }
+
+        slide p4{
+            float: right;
+            font-size: 70px;
+            text-align: center;
+            display: inline-block;
+            width: 500px;
+            margin-top: 170px;
+            color:#fff;
+        }
+
+
+        @keyframes slide{
+            0% {left:100%; width:100%;}
+            5% {left:0%;}
+            25% {left:0%;}
+            30% {left: -100%; width: 100%;}
+            30.0001%{left:-100%;width:0%;}
+            100%{left: 100%;width: 0%;}
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#home" class="logo">Urban slap</a>
+        <a href="logout.php" class="ss">Logout</a>
+        <a href="about_us.html" class="sa">About us</a>
+        <a href="#home" class="sa">Home</a>
+</div>
+<div class="sss">
+  
+</div>
+
+
+    <div class="slideimg">
+    <slider>
+        <slide><p1>Now get salon at home<br><input type="submit" name="submit" class="submit" value="book now" onclick="carpenter()"></p1></slide>
+        <slide><p2>Certified workers</p2></slide>
+        <slide><p>Slide 3</p></slide>
+        <slide><p4>Get 50% of on our first service</p4></slide>
+    </slider>
+   </div>
+
+     <div class="searchform">
+          <center><p>Search for the service</p></center>
+           <input type="text" id="search1" class="search" placeholder="driver,electrician,...." value="">
+           <center>
+           <button type="button" onclick="search()" style="margin-top:60px; width:58px; background-color: #fff;">search</button>
+         </center>
+     </div>
+
+ <div class="cardLayout">
+  <div class=cardrow>
+  
+      <div class="card">
+           <img src="images/carpenter.jpg" height="200px" width="300px" onclick="carpenter()">
+           <center><p class="p">carpenter</p></center>
+      </div>
+       <div class="card">
+           <img src="images/cleaner.jpg" height="200px" width="300px" onclick="cleaner()">
+           <center><p class="p">cleaner</p></center>
+      </div>
+       <div class="card">
+           <img src="images/gardener.jpg" height="200px" width="300px" onclick="gardener()">
+           <center><p class="p">gardener</p></center>
+      </div>
+
+  </div>
+  <div class=cardrow>
+  
+      <div class="card">
+           <img src="images/painter.jpg" height="200px" width="300px" onclick="painter()">
+           <center><p class="p">painter</p></center>
+      </div>
+       <div class="card">
+           <img src="images/mechanic.jpg" height="200px" width="300px" onclick="mechanic()">
+           <center><p class="p">mechanic</p></center>
+      </div>
+       <div class="card">
+           <img src="images/electrician.jpg" height="200px" width="300px" onclick="electrician()">
+           <center><p class="p">electrician</p></center>
+      </div>
+
+  </div>
+    <div class=cardrow>
+  
+      <div class="card">
+           <img src="images/Pest-Control.jpg" height="200px" width="300px" onclick="pest()">
+           <center><p class="p">pest control</p></center>
+      </div>
+       <div class="card">
+           <img src="images/plumber.jpg" height="200px" width="300px" onclick="plumber()">
+           <center><p class="p">plumber</p></center>
+      </div>
+       <div class="card">
+           <img src="images/salon.jpg" height="200px" width="300px" onclick="salon()">
+           <center><p class="p">salon at home</p></center>
+      </div>
+
+  </div>
+ </div>
+
+<div class="row">
+  <div class="column" style="background-color:#fff;">
+    <center><h4>High quality and trusted professionals</h4></center>
+    <center><p>We provide only verified, background checked<br> and high quality professionals</p></center>
+  </div>
+  <div class="column" style="background-color:#fff;">
+    <center><h4>Matched to Your Needs</h4></center>
+    <center><p>We match you with the right professionals<br> with the right budget</p></center>
+  </div>
+  <div class="column" style="background-color:#fff;">
+    <center><h4>Hassle Free Service Delivery</h4></center>
+    <center><p>Super convenient, guaranteed service<br> from booking to delivery</p></center>
+  </div>
+</div>
+
+ <div class="bottom">
+     <ul class="c">
+       <li><a href="carpenter.html">carpenter</a></li>
+       <li><a href="cleaner.html">cleaner</a></li>
+       <li><a href="gardener.html">gardener</a></li>
+      </ul> 
+      <ul class="d">
+       <li><a href="painter.html">painter</a></li>  
+       <li><a href="mechanic.html">mechanic</a></li>
+       <li><a href="electrician.html">electrician</a></li>
+     </ul>  
+     <ul class="e">
+       <li><a href="pest.html">pest control</a></li>
+       <li><a href="plumber.html">plumber</a></li>
+       <li><a href="salon.html">salon</a></li>
+     </ul>
+      <ul class="f">
+       <li><a href="about_us.html">about us</a></li>
+    
+     </ul>
+ </div>
+
+ <script type="text/javascript">
+   function carpenter() {
+      location.replace("carpenter.html");
+   }
+ </script>
+ <script >
+    function cleaner() {
+      location.replace("cleaner.html");
+   }
+ </script>
+ <script type="text/javascript">
+   function gardener() {
+      location.replace("gardener.html");
+   }
+ </script>
+ <script type="text/javascript">
+   function mechanic() {
+      location.replace("mechanic.html");
+   }
+ </script>
+ <script type="text/javascript">
+   function painter() {
+      location.replace("painter.html");
+   }
+ </script>
+ <script type="text/javascript">
+   function electrician() {
+      location.replace("electrician.html");
+   }
+ </script>
+ <script type="text/javascript">
+   function pest() {
+      location.replace("pest.html");
+   }
+ </script>
+ <script type="text/javascript">
+   function plumber() {
+      location.replace("plumber.html");
+   }
+ </script>
+ <script type="text/javascript">
+   function salon() {
+      location.replace("salon.html");
+   }
+ </script>
+ <script type="text/javascript">
+   function search(){
+      var x=document.getElementById("search1").value;
+     // alert("hello "+x)
+
+      if (x == "carpenter" || x=="Carpenter"){
+        location.replace("carpenter.html");
+      }
+      else if(x == "cleaner"){
+        location.replace("cleaner.html");
+      }
+      else if(x == "gardener"){
+        location.replace("gardener.html");
+      }
+      else if(x == "mechanic"){
+        location.replace("mechanic.html");
+      }
+      else if(x == "painter"){
+        location.replace("painter.html");
+      }
+      else if(x == "electrician"){
+        location.replace("electrician.html");
+      }
+      else if(x == "pest"){
+        location.replace("pest.html");
+      }
+      else if(x == "plumber"){
+        location.replace("plumber.html");
+      }
+      else if(x == "salon"){
+        location.replace("salon.html");
+      }
+      else{
+        alert(x+" service not found");
+      }
+   }
+ </script>
+
+</body>
+</html>

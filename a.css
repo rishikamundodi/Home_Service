@@ -1,0 +1,160 @@
+body {margin:0;
+background-color: #eae8e8;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #009688;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #028b7f;
+}
+
+.navbar .logo{
+  float: left;
+  margin-left: 120px;
+  font-size: 30px;
+}
+
+.navbar .ss {
+  float: right;
+  margin-right: 100px;
+  padding-right: 20px;
+  margin-top: 10px;
+}
+
+.navbar .sa{
+  float: right;
+  padding-right: 20px;
+  margin-top: 10px;
+}
+
+.sss{
+  width: 100%;
+  height: 70px;
+  background-color: #009688;
+}
+
+.searchform{
+  position: absolute;
+  background: #009688;
+  width: 100%;
+  height: 230px;
+    border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.searchform p{
+  font-size: 40px;
+  margin-top: 40px;
+  color: white;
+}
+
+.search{
+  color: #7d8988;
+  position: absolute;
+  top:60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 750px;
+  height: 55px;
+  font-size: 30px;
+  padding-left: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+::placeholder{
+  opacity: 0.3;
+}
+
+.partner{
+  background-color: #009688;
+  height: 150px;
+  width: 100%;
+  margin-top: 880px;
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: white;
+  font-size: 40px;
+  padding-top: 50px;
+}
+
+
+.row{
+  box-sizing: border-box;
+  margin-left: 0px;
+}
+
+
+.column {
+  float: left;
+  width: 33.33333%;
+  padding: 0px;
+  height: 120px; 
+  margin-top: -10px;
+}
+
+.column p{
+  font-size: 14px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.bottom{
+  width: 100%;
+  height: 150px;
+  margin-bottom: 0;
+  margin-top: -15px;
+  background-color: #009688; 
+  font-family: sans-serif;
+}
+
+.c{
+  float: left;
+  margin-top: 35px;
+  padding-left: 100px;
+}
+
+.d{
+  float: left;
+  margin-top: 35px;
+  padding-left: 230px;
+}
+
+.e{
+  float: left;
+  margin-top: 35px;
+  padding-left: 230px;
+}
+
+.f{
+  float: left;
+  margin-top: 35px;
+  padding-left: 230px;
+}
+
+li{
+  list-style-type: none;
+}
+
+li a{
+  color: white;
+}
